@@ -157,15 +157,16 @@ body {
 }
 
 #showcase {
-  background-color: rgba(220, 215, 215, 0.271);
+  background-color: rgba(255, 255, 255, 0.297);
   height: 100vh;
   position: relative;
+  color: white;
 }
 
 #showcase::before {
   content: "";
   position: absolute;
-  background: url("./Assets/img/pelins_2.jpg") no-repeat center center/cover;
+  background: url("./Assets/img/hero_photo_4.jpg") no-repeat center center/cover;
   top: 0;
   left: 0;
   width: 100%;
