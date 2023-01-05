@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  /* overflow: hidden; */
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: rgba(255, 192, 203, 0.364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: white;
+  width: 100%;
+  top: -10px;
+  z-index: 1;
+}
+
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: rgba(255, 192, 203, 0.436);
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  transform: scale(0);
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+  color: bisque;
+}
+
+.contanier {
+  max-width: 960px;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 3rem;
+}
+
+#showcase {
+  background-color: rgba(220, 215, 215, 0.271);
+  height: 100vh;
+  position: relative;
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  background: url("./Assets/img/pelins_2.jpg") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#showcase .showcase-contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+}
+
+#showcase p {
+  font: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+}
+
+/*********PAGE NUMBER ONE******** */
+#page-1 {
+  height: 100vh;
+  background: beige;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+#page-1 h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  /* margin: 1rem; */
+}
+
+#page-1 p {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgb(232, 216, 216);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/*********PAGE NUMBER TWO******** */
+
+#page-2 {
+  /* height: 150vh; */
+  background: brown;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+#page-2 h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  /* margin-bottom: 20px; */
+  /* line-height: 1.3; */
+  /* margin: 1rem; */
+}
+
+#page-2 p {
+  font-size: 1.4rem;
+  padding: 2rem 4rem;
+}
+
+#page-2 h3 {
+  color: white;
+  padding-bottom: 2rem;
+}
+
+#page-2 .dark-chocolate-benefits p {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  background: rgba(255, 255, 255, 0.662);
+  margin: 5px;
+  border-radius: 10px;
+  /* transition: all 2s ease ; */
+}
+
+.btn-page-2 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgb(232, 216, 216);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/*********PAGE NUMBER THREE******** */
+
+#page-3 {
+  /* height: 150vh; */
+  background: azure;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+#page-3 h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  /* margin-bottom: 20px; */
+  /* line-height: 1.3; */
+  /* margin: 1rem; */
+}
+
+#page-3 p {
+  font-size: 1.4rem;
+  padding: 2rem 4rem;
+}
+
+#page-3 h3 {
+  color: black;
+  padding-bottom: 2rem;
+}
+
+#page-3 .dark-chocolate-benefits p {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  background: rgba(255, 255, 255, 0.662);
+  margin: 5px;
+  border-radius: 10px;
+  /* transition: all 2s ease ; */
+}
+
+.btn-page-3 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgb(232, 216, 216);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/*********PAGE NUMBER FOUR******** */
+
+#page-4 {
+  /* height: 150vh; */
+  background: lightslategrey;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+#page-4 h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  /* margin-bottom: 20px; */
+  /* line-height: 1.3; */
+  /* margin: 1rem; */
+}
+
+#page-4 p {
+  font-size: 1.4rem;
+  padding: 2rem 4rem;
+}
+
+#page-4 h3 {
+  color: black;
+  padding-bottom: 2rem;
+}
+
+#page-4 .dark-chocolate-benefits p {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  background: rgba(255, 255, 255, 0.662);
+  margin: 5px;
+  border-radius: 10px;
+  /* transition: all 2s ease ; */
+}
+
+.btn-page-4 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgb(232, 216, 216);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* 
+.logo {
+  height: 5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 48px;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.9rem;
+} */
