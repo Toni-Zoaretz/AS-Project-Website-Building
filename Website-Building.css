@@ -115,7 +115,8 @@ body {
 }
 
 .menu-wrap .menu > div {
-  background: rgba(255, 192, 203, 0.436);
+  background: rgba(255, 192, 203, 0.91);
+  /* background: rgba(255, 192, 203, 0.436); */
   width: 200vw;
   height: 200vw;
   display: flex;
@@ -140,13 +141,17 @@ body {
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
-  color: white;
+  color: #3c2824;
+  font-size: 2.5rem;
+  font-weight: 400;
   text-decoration: none;
   transition: color 0.4s ease;
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
-  color: bisque;
+  color: #3c2824;
+  text-decoration: underline;
+  transition: all 1s ease;
 }
 
 .contanier {
@@ -188,7 +193,8 @@ body {
 }
 
 #showcase p {
-  font: 1.3rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .btn {
@@ -199,7 +205,7 @@ body {
 /*********PAGE NUMBER ONE******** */
 #page-1 {
   height: 100vh;
-  background: beige;
+  background: rgba(255, 192, 203, 0.495);
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -209,6 +215,7 @@ body {
 }
 
 #page-1 h1 {
+  color: #3c2824;
   font-size: 2rem;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -217,25 +224,34 @@ body {
 
 #page-1 p {
   font-size: 1.4rem;
-  padding: 1rem 4rem;
+  color: #3c2824;
+  padding: 2rem 4rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
-  background-color: rgb(232, 216, 216);
-  color: #333;
+  padding: 1rem 6rem;
+  /* background-color: rgb(232, 216, 216); */
+  color: white;
   text-decoration: none;
-  border: none;
+  border: 2px solid white;
+  border-radius: 10px;
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
-/*********PAGE NUMBER TWO******** */
+.btn:hover {
+  border: 2px solid pink;
+  background-color: pink;
+  color: #3c2824;
+  font-weight: 500;
+}
+
+/*********PAGE NUMBER TWO --DARK COHCOLATE******** */
 
 #page-2 {
   /* height: 150vh; */
-  background: brown;
+  background: #fefae0;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -245,49 +261,83 @@ body {
 }
 
 #page-2 h1 {
+  color: #3c2824;
   font-size: 2rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   /* margin-bottom: 20px; */
   /* line-height: 1.3; */
   /* margin: 1rem; */
 }
 
-#page-2 p {
+#page-2 p,
+#page-3 p,
+#page-4 p {
   font-size: 1.4rem;
-  padding: 2rem 4rem;
+  padding-bottom: 2rem;
+  /* padding: 2rem 4rem; */
+  color: #3c2824;
 }
 
 #page-2 h3 {
-  color: white;
-  padding-bottom: 2rem;
+  color: #3c2824;
+  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
+  font-size: 2rem;
 }
 
-#page-2 .dark-chocolate-benefits p {
+#page-2 .dark-chocolate-benefits p,
+#page-3 .milk-chocolate-benefits p,
+#page-4 .white-chocolate-benefits p {
   font-size: 1.4rem;
   padding: 1rem 4rem;
-  background: rgba(255, 255, 255, 0.662);
-  margin: 5px;
-  border-radius: 10px;
+  /* padding: 5rem 2rem; */
+  background: none;
+  /* margin: 5px; */
+  border-radius: 20px;
   /* transition: all 2s ease ; */
 }
 
-.btn-page-2 {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: rgb(232, 216, 216);
-  color: #333;
-  text-decoration: none;
-  border: none;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+#page-2 .dark-chocolate-benefits p i,
+#page-3 p i,
+#page-4 p i {
+  display: block;
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
 }
 
-/*********PAGE NUMBER THREE******** */
+#page-1 .btn,
+#page-2 .btn-page-2,
+#page-3 .btn-page-3,
+#page-4 .btn-page-4,
+#page-5 .btn-page-5 {
+  display: inline-block;
+  padding: 1rem 6rem;
+  color: #3c2824;
+  text-decoration: none;
+  border: 2px solid #3c2824;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+#page-1 .btn:hover,
+#page-2 .btn-page-2:hover,
+#page-3 .btn-page-3:hover,
+#page-4 .btn-page-4:hover,
+#page-5 .btn-page-5:hover {
+  border: 2px solid #3c2824;
+  background-color: #3c2824;
+  color: white;
+  font-weight: 500;
+}
+
+/*********PAGE NUMBER THREE-MILE CHOCOALE******** */
 
 #page-3 {
   /* height: 150vh; */
-  background: azure;
+  background: #ffb30082;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -297,6 +347,7 @@ body {
 }
 
 #page-3 h1 {
+  color: #3c2824;
   font-size: 2rem;
   padding-top: 2rem;
   /* margin-bottom: 20px; */
@@ -304,42 +355,44 @@ body {
   /* margin: 1rem; */
 }
 
-#page-3 p {
+/* #page-3 p {
   font-size: 1.4rem;
   padding: 2rem 4rem;
-}
+  color: #3c2824;
+} */
 
 #page-3 h3 {
-  color: black;
+  color: #3c2824;
   padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
-#page-3 .dark-chocolate-benefits p {
+/* #page-3 .dark-chocolate-benefits p {
   font-size: 1.4rem;
   padding: 1rem 4rem;
   background: rgba(255, 255, 255, 0.662);
   margin: 5px;
   border-radius: 10px;
   /* transition: all 2s ease ; */
-}
 
-.btn-page-3 {
+/* #page-2 .btn-page-2 {
   display: inline-block;
-  padding: 1rem 2rem;
-  background-color: rgb(232, 216, 216);
-  color: #333;
+  padding: 1rem 6rem;
+ 
+  color: #3c2824;
   text-decoration: none;
-  border: none;
+  border: 2px solid #3c2824;
+  border-radius: 10px;
   margin-top: 1rem;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-}
+  font-size: 1.5rem;
+} */
 
-/*********PAGE NUMBER FOUR******** */
+/*********PAGE NUMBER FOUR-WHITE CHOCOLATE******** */
 
 #page-4 {
   /* height: 150vh; */
-  background: lightslategrey;
+  background: #bb9557c6;
+  /* #caad7d; */
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -349,6 +402,7 @@ body {
 }
 
 #page-4 h1 {
+  color: #3c2824;
   font-size: 2rem;
   padding-top: 2rem;
   /* margin-bottom: 20px; */
@@ -356,26 +410,27 @@ body {
   /* margin: 1rem; */
 }
 
-#page-4 p {
+/* #page-4 p {
   font-size: 1.4rem;
   padding: 2rem 4rem;
-}
+  color: #3c2824;
+} */
 
 #page-4 h3 {
-  color: black;
+  color: #3c2824;
   padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
-#page-4 .dark-chocolate-benefits p {
+/* #page-4 .dark-chocolate-benefits p {
   font-size: 1.4rem;
   padding: 1rem 4rem;
   background: rgba(255, 255, 255, 0.662);
   margin: 5px;
   border-radius: 10px;
   /* transition: all 2s ease ; */
-}
 
-.btn-page-4 {
+/* .btn-page-4 {
   display: inline-block;
   padding: 1rem 2rem;
   background-color: rgb(232, 216, 216);
@@ -385,7 +440,106 @@ body {
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1.1rem;
+} */
+
+/*********PAGE NUMBER FIVE-CONTACT FORM******** */
+
+#page-5 {
+  /* background-color: rgba(255, 255, 255, 0.399); */
+  height: 100vh;
+  position: relative;
+  /* color: white; */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+#page-5::before {
+  content: "";
+  position: absolute;
+  background: url("./Assets/img/acrylic-dripping-paint-light-brown.jpg")
+    no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#page-5 h1 {
+  color: #3c2824;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+/* #page-5 h1 > p {
+  color: #3c2824;
+  padding-bottom: 5rem;
+  font-size: 5rem;
+} */
+
+/* #page-5 h3 {
+  color: #3c2824;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+} */
+
+#page-5 p {
+  color: #3c2824;
+  /* padding-bottom: 5rem; */
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 5rem;
+  /* background: rgba(255, 255, 255, 0.662); */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* transition: all 2s ease ; */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form label {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: #3c2824;
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 150%;
+  background: none;
+  border: 2px solid #3c28246d;
+  border-radius: 10px;
+  /* height: 4rem; */
+}
+
+textarea {
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 4rem;
+}
+
+/* .btn-page-5 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgb(232, 216, 216);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  /* margin-bottom: 2rem; */
 
 /* 
 .logo {
