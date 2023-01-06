@@ -220,15 +220,19 @@ body {
 #page-4 h1 {
   color: #3c2824;
   font-size: 2rem;
+  margin-bottom: 20px;
   /* margin-bottom: 2rem; */
   line-height: 1.2;
   /* margin: 1rem; */
 }
 
-#page-1 p {
+#page-1 h1 p,
+#page-2 h1 p,
+#page-3 h1 p,
+#page-4 h1 p {
   font-size: 1.4rem;
-  color: #3c2824;
   padding: 2rem 4rem;
+  color: #3c2824;
 }
 
 .btn {
@@ -272,30 +276,31 @@ body {
 /* line-height: 1.3; */
 /* margin: 1rem; */
 
-#page-2 h1 p,
+/* #page-2 h1 p,
 #page-3 h1 p,
 #page-4 h1 p {
   font-size: 1.4rem;
   padding: 2rem 4rem;
   color: #3c2824;
-}
+} */
 
 #page-2 > h3,
 #page-3 > h3,
 #page-4 > h3 {
   color: #3c2824;
-  /* padding-bottom: 1rem; */
-  /* padding-bottom: 1rem; */
   font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-#page-2 .dark-chocolate-benefits p,
-#page-3 .milk-chocolate-benefits p,
-#page-4 .white-chocolate-benefits p {
+.dark-chocolate-benefits p,
+.milk-chocolate-benefits p,
+.white-chocolate-benefits p {
   font-size: 1.4rem;
-  /* padding: 1rem 1rem; */
-  /* padding: 5rem 2rem; */
+  padding: 1rem 1rem;
+
   background: none;
+
   /* margin: 5px; */
   border-radius: 20px;
   /* transition: all 2s ease ; */
