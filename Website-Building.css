@@ -214,10 +214,13 @@ body {
   padding: 0 4rem;
 }
 
-#page-1 h1 {
+#page-1 h1,
+#page-2 h1,
+#page-3 h1,
+#page-4 h1 {
   color: #3c2824;
   font-size: 2rem;
-  margin-bottom: 20px;
+  /* margin-bottom: 2rem; */
   line-height: 1.2;
   /* margin: 1rem; */
 }
@@ -250,7 +253,7 @@ body {
 /*********PAGE NUMBER TWO --DARK COHCOLATE******** */
 
 #page-2 {
-  /* height: 150vh; */
+  height: 100vh;
   background: #fefae0;
   flex-direction: column;
   display: flex;
@@ -260,28 +263,28 @@ body {
   padding: 0 4rem;
 }
 
-#page-2 h1 {
+/* #page-2 h1 {
   color: #3c2824;
   font-size: 2rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
   /* margin-bottom: 20px; */
-  /* line-height: 1.3; */
-  /* margin: 1rem; */
-}
+/* line-height: 1.3; */
+/* margin: 1rem; */
 
-#page-2 p,
-#page-3 p,
-#page-4 p {
+#page-2 h1 p,
+#page-3 h1 p,
+#page-4 h1 p {
   font-size: 1.4rem;
-  padding-bottom: 2rem;
-  /* padding: 2rem 4rem; */
+  padding: 2rem 4rem;
   color: #3c2824;
 }
 
-#page-2 h3 {
+#page-2 > h3,
+#page-3 > h3,
+#page-4 > h3 {
   color: #3c2824;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   /* padding-bottom: 1rem; */
   font-size: 2rem;
 }
@@ -290,7 +293,7 @@ body {
 #page-3 .milk-chocolate-benefits p,
 #page-4 .white-chocolate-benefits p {
   font-size: 1.4rem;
-  padding: 1rem 4rem;
+  /* padding: 1rem 1rem; */
   /* padding: 5rem 2rem; */
   background: none;
   /* margin: 5px; */
@@ -302,7 +305,7 @@ body {
 #page-3 p i,
 #page-4 p i {
   display: block;
-  padding-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
   font-size: 3rem;
 }
 
@@ -336,7 +339,7 @@ body {
 /*********PAGE NUMBER THREE-MILE CHOCOALE******** */
 
 #page-3 {
-  /* height: 150vh; */
+  height: 100vh;
   background: #ffb30082;
   flex-direction: column;
   display: flex;
@@ -345,15 +348,12 @@ body {
   text-align: center;
   padding: 0 4rem;
 }
-
+/* 
 #page-3 h1 {
   color: #3c2824;
   font-size: 2rem;
   padding-top: 2rem;
-  /* margin-bottom: 20px; */
-  /* line-height: 1.3; */
-  /* margin: 1rem; */
-}
+  margin-bottom: 20px; */
 
 /* #page-3 p {
   font-size: 1.4rem;
@@ -361,11 +361,11 @@ body {
   color: #3c2824;
 } */
 
-#page-3 h3 {
+/* #page-3 h3 {
   color: #3c2824;
   padding-bottom: 2rem;
   font-size: 2rem;
-}
+} */
 
 /* #page-3 .dark-chocolate-benefits p {
   font-size: 1.4rem;
@@ -390,9 +390,8 @@ body {
 /*********PAGE NUMBER FOUR-WHITE CHOCOLATE******** */
 
 #page-4 {
-  /* height: 150vh; */
+  height: 100vh;
   background: #bb9557c6;
-  /* #caad7d; */
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -401,14 +400,13 @@ body {
   padding: 0 4rem;
 }
 
-#page-4 h1 {
+/* #page-4 h1 {
   color: #3c2824;
   font-size: 2rem;
   padding-top: 2rem;
   /* margin-bottom: 20px; */
-  /* line-height: 1.3; */
-  /* margin: 1rem; */
-}
+/* line-height: 1.3; */
+/* margin: 1rem; */
 
 /* #page-4 p {
   font-size: 1.4rem;
@@ -416,11 +414,11 @@ body {
   color: #3c2824;
 } */
 
-#page-4 h3 {
+/* #page-4 h3 {
   color: #3c2824;
   padding-bottom: 2rem;
   font-size: 2rem;
-}
+} */
 
 /* #page-4 .dark-chocolate-benefits p {
   font-size: 1.4rem;
