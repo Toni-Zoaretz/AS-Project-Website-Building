@@ -25,7 +25,7 @@ In the design for the Desktop I used images for each section and for Mobile I us
 
 In this section I created a contact form combining a background image with a scrolling effect for Desktop and for Mobile a different design.
 
-### Demo site link
+### Demo site link:
 
 https://toni-z.netlify.app/
 
