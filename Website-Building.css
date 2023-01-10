@@ -201,7 +201,6 @@ body {
   border: none;
 }
 
-/*********PAGE NUMBER ONE-PINK PAGE!!!******** */
 #page-1 {
   height: 100vh;
   background: rgba(255, 192, 203, 0.495);
@@ -249,8 +248,6 @@ body {
   color: #3c2824;
   font-weight: 500;
 }
-
-/*********PAGE NUMBER TWO--DARK COHCOLATE*********/
 
 #page-2 {
   height: 100vh;
@@ -316,8 +313,6 @@ body {
   font-weight: 500;
 }
 
-/*********PAGE NUMBER THREE-MILE CHOCOALE*********/
-
 #page-3 {
   height: 100vh;
   background: #ffb30082;
@@ -329,8 +324,6 @@ body {
   padding: 0 4rem;
 }
 
-/*********PAGE NUMBER FOUR-WHITE CHOCOLATE*********/
-
 #page-4 {
   height: 100vh;
   background: #bb9557c6;
@@ -341,8 +334,6 @@ body {
   text-align: center;
   padding: 0 4rem;
 }
-
-/*********PAGE NUMBER FIVE-CONTACT FORM******** */
 
 #page-5 {
   height: 100vh;
@@ -414,8 +405,6 @@ input[type="email"] {
   height: 4rem;
 }
 
-/******MEDIA QUERY FOR TABLET*****/
-
 @media (min-width: 799px) and (max-width: 1060px) {
   #page-1,
   #page-2,
@@ -425,8 +414,6 @@ input[type="email"] {
     padding: 0 10rem;
   }
 }
-
-/******MEDIA QUERY FOR MOBILE*****/
 
 @media (min-width: 1061px) {
   #page-1 {
